@@ -17,13 +17,6 @@ function lineToPlane(lineStart, lineDirection, planeNormal, planePoint) {
     return result
 }
 
-function distancePointToLine(lineStart, lineDirection, pt) {
-    let pa = V(lineStart).sub(pt)
-    let c = V(lineDirection).scale(pa.dot(lineDirection) / lineDirection.dot(lineDirection))
-    let d = pa.sub(c)
-    return Math.sqrt(d.dot(d))
-}
-
 function clampToPlaneArea(lineStart, lineDirection, planeNormal, planePoint, width, height) {
     let dot = lineDirection.dot(planeNormal)
     let normalise = Q().fromToRotation(planeNormal, pc.Vec3.UP)

@@ -1,5 +1,5 @@
-import {V, Q} from 'working'
-import getPosition from 'position'
+import {V, Q} from 'playcanvas-working-vectors'
+import getPosition from 'playcanvas-get-position'
 
 function orthogonal(v) {
 
@@ -36,13 +36,9 @@ function fromToRotation(v1, v2, q) {
     return q.normalize()
 
 }
-let fromForwardToUp = new pc.Quat()
 
-
-try {
-    fromForwardToUp.copy(fromToRotation(pc.Vec3.FORWARD, pc.Vec3.RIGHT))
-} catch(e) {
-    console.error(e)
+pc.Vec3.prototype.orthogonal = function() {
+    return orthogonal(this)
 }
 
 pc.Quat.prototype.fromToRotation = function(v1,v2) {
@@ -96,4 +92,4 @@ pc.Entity.prototype.dot = function(entityOrPosition) {
     return this.forward.dot(vector)
 }
 
-export {fromForwardToUp, fromToRotation, orthogonal}
+export default fromToRotation

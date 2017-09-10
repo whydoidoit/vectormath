@@ -1,0 +1,26 @@
+{
+  "name": "playcanvas-vector-math",
+  "version": "1.0.1",
+  "description": "PlayCanvas vector mathematics extensions for `fromToRotation`, `twist` etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whydoidoit/vectormath.git"
+  },
+  "keywords": [
+    "PlayCanvas"
+  ],
+  "author": "Mike Talbot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whydoidoit/vectormath/issues"
+  },
+  "homepage": "https://github.com/whydoidoit/vectormath#readme",
+  "dependencies": {
+    "playcanvas-get-position": "^1.0.0",
+    "playcanvas-working-vectors": "^1.0.0"
+  }
+}
