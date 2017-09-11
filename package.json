@@ -1,6 +1,6 @@
 {
   "name": "playcanvas-vector-math",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "PlayCanvas vector mathematics extensions for `fromToRotation`, `twist` etc",
   "main": "index.js",
   "scripts": {
