@@ -1,4 +1,4 @@
-import {V} from 'working'
+import {V} from 'playcanvas-working-vectors'
 
 function angleBetween(vector1, vector2, up) {
     up = up || pc.Vec3.UP

@@ -1,4 +1,4 @@
-import {V, Q} from 'working'
+import {V, Q} from 'playcanvas-working-vectors'
 
 let result = {
     x: 0,
